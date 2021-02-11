@@ -1,15 +1,12 @@
 {% load static %}
 <html>
 <head>
+    {% block title %}{% endblock %}
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
 </head>
 <body>
     {% block body %} 
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <!-- Navbar content -->
-            </nav>
-        </div>
+        {% block content %}  {% endblock %}
     {% endblock body %}
 </body>
 </html>
